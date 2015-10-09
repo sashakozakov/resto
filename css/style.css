@@ -457,6 +457,9 @@ address p+p,
 .ba-footer__menu {
 margin-left: -24px;
 }
+.ba-footer__menu a{
+color: #FFF;
+}
 .ba-footer__column-two {
 	padding-left: 10px;
 }
@@ -525,6 +528,46 @@ letter-spacing: .6px;
 
 
 
+.ba-dish-item img {
+	display: block;
+	width: 100%;
+}
+
+.ba-dish-item {
+	position: relative;
+}
+.ba-dish-item__overlay {
+	position: absolute;
+	left: 0;
+	right: 0;
+	top: 0;
+	bottom: 0;
+	background: rgba(243, 73, 73, 0.8);
+	text-align: center;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity .3s ease-in, visibility .3s ease-in;
+}
 
 
+.ba-dish-item__title {
+	color: #FFF;
+	font-weight: 700;
+	font-size: 14px;;
+	padding-top: 0px;
+	text-align: center;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition: opacity .3s ease-in, transform .3s ease-in;
+opacity: 0;
+transform:translateY(-100px);
+}
+.ba-dish-item:hover .ba-dish-item__overlay{
+	visibility: visible;
+	opacity: 1;
+}
+.ba-dish-item:hover .ba-dish-item__title {
+opacity: 1;
+transform:translateY(0);
 
+}
