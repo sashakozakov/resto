@@ -324,9 +324,11 @@ textarea {
 }
 
 .featured-dishes__slider {
-	margin-top: 25px;
+	margin-top: 17px;
+margin-right: -2px;
 }
 .featured-dishes__slider--buttons {
+margin-right: 3px;
 font-size: 25px;
 color: #dedede;
 }
