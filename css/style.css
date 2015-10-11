@@ -83,15 +83,16 @@ textarea {
 /*Header*/
 .ba-header {
 	height: 110px;
-	line-height: 110px;
 
 }
 .ba-logo {
 	float: left;
 	margin-top: 9px;
+	line-height:110px;
 }
 .ba-navigation {
 	margin-right: -50px;
+	line-height:110px;
 }
 .menu {
 	float: right;
@@ -109,28 +110,25 @@ textarea {
 
 /*Start ba-banner*/
 .ba-banner {
-	height: 574px;
-	/*background-color: rgba(51, 51, 51, .7);*/
 	background: url('../img/banner.jpg') 50% no-repeat;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-	background-size: cover;
-}
-.ba-banner--image {
-	height: 100%;
-	background: url('../img/Shape2copy.png') 50% no-repeat;
 	-webkit-background-size: cover;
 	-o-background-size: cover;
 	background-size: cover;
 	border-bottom:4px solid #f34949;
 }
+
+.ba-banner--image {
+	height: 100%;
+    background-color: rgba(59, 59, 59, .8);
+    }
+.ba-banner__inner {
+padding: 195px 0;
+}
 .ba-banner--title {
 	margin: 0;
 	color: #FFF;
-	font: normal 100px/1.4 'wcmano_negra_btaregular', Arial, sans-serif;
+	font: normal 100px/1.4 'wcmano_negra_btaregular', 'AleoBA', Arial, sans-serif;
 	letter-spacing: -9px;
-	margin-top: 200px;
-	margin-left: 78px;
 }
 .ba-banner--text {
 	color: #FFF;
@@ -173,11 +171,12 @@ textarea {
 	background: url('../img/Shape13.svg') 50% no-repeat;
 	height: 75px;
 	color: #FFF;
-	padding-top: 10px;
 	letter-spacing: 1px;
 }
 .ba-price-menu__title--link {
 	color: #FFF;
+	display:block;
+	padding:10px 0;
 }
 .ba-price-menu__title--link:hover {
 	color: #BAB2B2;
@@ -212,6 +211,8 @@ textarea {
 	float: right;
 	margin-right: 48px;
 	color: #555;
+	font-weight:700;
+	display:inline;
 }
 
 .ba-price-menu__item--price h5 {
@@ -219,6 +220,10 @@ textarea {
 }
 .ba-price-row {
 	position: relative;
+}
+.ba-price-menu__item--price_item,
+.ba-price-menu__item--price_item--col2{
+display:inline;
 }
 .ba-price-menu__item--price_item:before {
 	content: "";
@@ -264,6 +269,11 @@ textarea {
 	border:1px solid #b7b7b7;
 	color: #b7b7b7;
 	position: relative;
+}
+.ba-btn__load:hover{
+	background: #F34949;
+	color: #b7b7b7;
+	border:1px solid #F34949;
 }
 .ba-btn__load:after {
 	content: "|";
@@ -512,6 +522,7 @@ address p+p,
 .ba-footer__copyright--link {
 	font-weight: bold;
 	letter-spacing: .6px;
+	color:rgba(192, 192, 192, 1);
 
 }
 
